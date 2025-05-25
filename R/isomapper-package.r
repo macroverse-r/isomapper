@@ -1,0 +1,58 @@
+#' isomapper: ISO Codes and Country Mapping Utilities
+#'
+#' @description
+#' The isomapper package provides utilities for working with country codes, ISO standards,
+#' and geographic entity mapping. It includes functions for converting between different
+#' coding schemes, standardizing country names, and retrieving geographic metadata.
+#' Part of the macroverse ecosystem.
+#'
+#' @details
+#' ## Main Functions
+#'
+#' ### Country Code Conversion
+#' - \code{\link{im_ctry2iso}}: Convert country names to ISO3 codes
+#' - \code{\link{im_from_iso}}: Get country information from ISO codes
+#'
+#' ### Country Classification
+#' - \code{\link{im_get_category}}: Get countries in specific categories
+#'
+#' ## Data
+#' - \code{\link{ISO_DATA}}: Comprehensive ISO code and classification data
+#'
+#' @section Categories:
+#' The package supports various country classification systems:
+#' \itemize{
+#'   \item Economic classifications (CTR, SMP, PERI)
+#'   \item Geographic regions and subregions
+#'   \item International organizations (EU, ASEAN, BRICS, etc.)
+#'   \item Resource classifications (oil exporters/importers, natural resources)
+#' }
+#'
+#' @section See Also:
+#' Other macroverse packages:
+#' \itemize{
+#'   \item \code{mvcommon}: Common utilities and validation
+#'   \item \code{pplot}: Panel data visualization
+#'   \item \code{macrodata}: Data loading and processing
+#'   \item \code{mvlazy}: Convenience functions
+#'   \item \code{macroverse}: Umbrella package
+#' }
+#'
+#' @examples
+#' \dontrun{
+#' # Convert country names to ISO codes
+#' im_ctry2iso(c("France", "Germany", "USA"))
+#' 
+#' # Get country information
+#' im_from_iso(c("FRA", "DEU", "USA"), opt = "Region")
+#' 
+#' # Get countries in categories
+#' eu_countries <- im_get_category("EU")
+#' african_countries <- im_get_category("AFRICA")
+#' }
+#'
+#' @docType package
+#' @name isomapper-package
+#' @aliases isomapper
+#' @keywords internal
+"_PACKAGE"

@@ -1,0 +1,48 @@
+#' ISO Country Code Data
+#'
+#' @description
+#' A comprehensive dataset containing ISO country codes, names, and various
+#' classification systems for countries and territories worldwide.
+#'
+#' @format The dataset contains multiple objects:
+#' 
+#' \describe{
+#'   \item{list_ctry2iso}{Named list mapping country names to ISO3 codes}
+#'   \item{list_iso2country}{Named list mapping ISO3 codes to country names}
+#'   \item{list_iso2country_others}{Named list of special/regional pseudo-ISO codes}
+#'   \item{list_iso2country_old}{Named list of historical ISO codes}
+#'   \item{list_iso2_to_iso3}{Named list mapping ISO2 to ISO3 codes}
+#'   \item{list_category2iso}{Named list mapping categories to ISO3 codes}
+#'   \item{list_categories}{Character vector of all available categories}
+#'   \item{category_labels}{Named character vector of category display labels}
+#' }
+#'
+#' @details
+#' Categories include:
+#' \itemize{
+#'   \item Economic: CTR_LDR, CTR_FOL, SMP_WLD, SMP_RLD, SMP_FOL, PERI
+#'   \item Regional: AFRICA, AMERICAS, ASIA, EUROPE, OCEANIA
+#'   \item Subregional: NORTH_AFRICA, WEST_ASIA, EASTERN_EUROPE, etc.
+#'   \item Groups: BRICS, EU, ASEAN, G7, G20, etc.
+#'   \item Resources: NRS_REN, HYD_EXP, HYD_IMP
+#' }
+#'
+#' @source
+#' ISO codes from ISO 3166-1 standard.
+#' Country classifications from various international organizations.
+#'
+#' @examples
+#' \dontrun{
+#' # Load the data
+#' data(ISO_DATA)
+#' 
+#' # Access country name to ISO mapping
+#' list_ctry2iso[["France"]]  # Returns "FRA"
+#' 
+#' # Access ISO to country name mapping
+#' list_iso2country[["USA"]]  # Returns "United States"
+#' 
+#' # Get countries in a category
+#' list_category2iso[["EU"]]  # Returns EU member ISO codes
+#' }
+"ISO_DATA"
