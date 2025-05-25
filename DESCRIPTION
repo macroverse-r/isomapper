@@ -1,0 +1,23 @@
+Package: isomapper
+Title: ISO Codes and Country Mapping Utilities
+Version: 0.1.0
+Authors@R: 
+    person("Benjamin", "Peeters", 
+           email = "benjaminpeeters@protonmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Provides utilities for working with country codes, ISO standards,
+    and geographic entity mapping. Includes functions for converting between
+    different coding schemes, standardizing country names, and retrieving
+    geographic metadata. Part of the macroverse ecosystem.
+License: AGPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports:
+    mvcommon (>= 0.1.0)
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
