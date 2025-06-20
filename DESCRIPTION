@@ -10,7 +10,7 @@ Description: Provides utilities for working with country codes, ISO standards,
     and geographic entity mapping. Includes functions for converting between
     different coding schemes, standardizing country names, and retrieving
     geographic metadata. Part of the macroverse ecosystem.
-License: AGPL (>= 3)
+License: AGPL (>= 3) + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Depends: R (>= 3.5.0)
