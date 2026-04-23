@@ -3,10 +3,10 @@
 ^dev$
 ^data-raw$
 ^\.ai$
-^CLAUDE\.md$
 ^README\.Rmd$
 ^_pkgdown\.yml$
 ^docs$
 ^\.github$
-^LICENSE\.md$
-^LICENSE_COMM\.md$
+# Exclude every root-level .md file except README.md and NEWS.md
+# (case-sensitive allowlist — alternate-case variants are excluded):
+^(?!(?-i:README\.md$|NEWS\.md$))[^/]+\.md$
